@@ -1,6 +1,14 @@
+import 'dart:math';
+import 'dart:io';
+
 void main() {
+  
+  print("What is your name?:");
+  String? userName = stdin.readLineSync();
+  print("Hello ${userName}");
   print("Hello World!");
   String Name = "Mati ul Rehman";
+
 //loops
   for (int i = 0; i < 10; i++) {
     if (i == 5) {
@@ -17,4 +25,7 @@ void main() {
   print(Name[0]);
   print(Name.indexOf(" "));
   print("Name :${Name + Name}");
+  print(sqrt(5));
+ 
+
 }
