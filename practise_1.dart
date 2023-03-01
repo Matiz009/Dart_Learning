@@ -22,6 +22,10 @@ void main() {
   String? word = stdin.readLineSync()!;
   checkVowel(word.toLowerCase());
   printName(word);
+  print("Enter any number:\t");
+  int? num1 = int.parse(stdin.readLineSync()!);
+  printTables(num1);
+  printNums();
 }
 
 bool evenCheck(int? number) {
@@ -75,4 +79,20 @@ int calculateSum(int? num) {
   }
   print("Sum: $sum");
   return sum;
+}
+
+void printTables(int? number) {
+  for (int i = 1; i <= 10; i++) {
+    int? num = number! * i;
+    print("$number*$i=$num");
+  }
+}
+
+void printNums() {
+  for (int i = 0; i < 100; i++) {
+    if (i == 41) {
+      i = i + 1;
+    }
+    print(i);
+  }
 }
